@@ -1,6 +1,12 @@
 import React from 'react';
 import "./App.css";
 import { FaFacebook,FaYoutube,FaTwitter, FaPinterest, FaInstagram } from 'react-icons/fa';
+import logo from './media/logo.svg';
+import avatar_ali from './media/avatar-ali.png';
+import avatar_anisha from './media/avatar-anisha.png';
+import avatar_richard from './media/avatar-richard.png'; 
+import hamburger_icon from './media/icon-hamburger.svg';
+import illustration from './media/illustration-intro.svg'; 
 
 
 export const App = () => {
@@ -8,8 +14,8 @@ export const App = () => {
     <div class="mycontainer">
       <div class="navbar">
         <span class="logo-menu">
-          <img src="src/media/logo.svg" alt="manage logo" class="icon" />
-          <img src="src/media/icon-hamburger.svg" alt="menu icon" class="menu" />
+          <img src={logo} alt="manage logo" class="icon" />
+          <img src={hamburger_icon} alt="menu icon" class="menu" />
         </span>
         <ul class="nav-items">
           <li>Pricing</li>
@@ -31,7 +37,7 @@ export const App = () => {
           <button>Get Started</button>
         </div>
         <div class="disp2">
-          <img src="src/media/illustration-intro.svg" alt="illustration-intro" />
+          <img src={illustration} alt="illustration-intro" />
         </div>
       </div>
       <div class="info-page">
@@ -87,7 +93,7 @@ export const App = () => {
         <div class="members">
           <div class="anisha">
             <span>
-              <img src="src/media/avatar-anisha.png" alt="anisha image" />
+              <img src={avatar_anisha} alt="anisha image" />
             </span>
             <h4>Anisha Li</h4>
             <p>
@@ -98,7 +104,7 @@ export const App = () => {
           </div>
           <div class="bravo">
             <span>
-              <img src="src/media/avatar-ali.png" alt="bravo image" />
+              <img src={avatar_ali} alt="bravo image" />
             </span>
             <h4>Ali Bravo</h4>
             <p>
@@ -115,7 +121,7 @@ export const App = () => {
           </div>
           <div class="richards">
             <span>
-              <img src="src/media/avatar-richard.png" alt="richards image" />
+              <img src={avatar_richard} alt="richards image" />
             </span>
             <h4>Richard Watts</h4>
             <p>
@@ -135,7 +141,7 @@ export const App = () => {
         <div class="bar1">
           <p>Copyright 2050. All Rights Reserved</p>
           <span>
-            <img src="src/media/logo.svg" alt="manage logo" />
+            <img src={logo} alt="manage logo" />
           </span>
           <ul>
             <li>
