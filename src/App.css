@@ -1,0 +1,197 @@
+body{
+    @apply text-black bg-contain bg-no-repeat bg-mobileview sm:bg-tabletview md:bg-tabletview lg:bg-desktopview
+}
+.mycontainer{
+    @apply p-10 sm:p-16 md:p-20 lg:p-28
+}
+.navbar{
+    @apply max-w-[640px] w-full sm:max-w-[768px] sm:w-full sm:flex sm:justify-between md:max-w-[1024px] md:w-full lg:max-w-[1280px] lg:w-full mx-auto 
+}
+.logo-menu{
+    @apply max-w-[640px] w-full flex justify-between sm:max-w-[768px] sm:w-fit  
+}
+.icon{
+    @apply px-5 sm:px-0 
+}
+.menu{
+    @apply sm:hidden cursor-pointer
+}
+.nav-items{
+    @apply hidden sm:flex sm:justify-around sm:w-fit md:flex md:justify-around md:w-fit my-auto lg:w-fit font-bold gap-4
+}
+.nav-items li{
+    @apply hover:text-slate-400 cursor-pointer
+}
+.start-btn{
+    @apply hidden sm:block md:block w-fit px-4 py-2 text-white bg-[#f3603c] rounded-full my-auto shadow-2xl hover:drop-shadow-xl sm:w-fit
+}
+.welcome-disp{
+    @apply flex flex-col-reverse gap-20 sm:flex sm:flex-row mt-10
+}
+.disp1{
+    @apply flex flex-col justify-center items-center sm:justify-start sm:items-start w-fit my-auto
+}
+.disp1 h2{
+    @apply text-[2.5em] sm:text-[2.6em] md:text-[2.9em] font-bold text-slate-800 w-fit mx-auto text-center sm:text-start py-3
+}
+.disp1 p{
+    @apply text-[1.2em] text-slate-600 font-semibold mx-auto sm:text-start text-center
+}
+.disp1 button{
+    @apply w-fit px-3 py-2 text-white bg-[#f3603c] rounded-full mx-auto sm:mx-0 my-4 shadow-2xl shadow-orange-900  hover:drop-shadow-xl
+}
+.disp2{
+    @apply flex justify-center items-center w-fit
+}
+.disp2 img{
+    @apply object-fill m-auto 
+}
+.info-page{
+    @apply flex flex-col items-center justify-center mt-16 sm:flex sm:flex-row sm:gap-20 sm:items-start sm:justify-start
+}
+.info1{
+    @apply flex flex-col justify-center sm:justify-start
+}
+.info1 h2{
+    @apply text-[2em] lg:text-[2.5em] font-bold text-slate-800 w-fit mx-auto px-14 sm:text-start sm:px-0 sm:mx-0
+}
+.info1 p{
+    @apply text-[1.2em] text-slate-600 font-semibold px-3 mx-auto py-5 text-center sm:text-start sm:px-0 sm:mx-0
+}
+.info2{
+    @apply mt-16 flex flex-col gap-9 sm:mt-0
+}
+.point{
+    @apply flex flex-col gap-3
+}
+.point-head{
+    @apply flex justify-start gap-3 bg-orange-50 rounded-l-full
+}
+.point-head p{
+    @apply bg-[#f3603c] text-white font-bold px-8 py-4 rounded-full 
+}
+.point-head h3{
+    @apply font-bold text-lg py-2
+}
+.point h4{
+    @apply text-[1.2em] text-slate-600 font-semibold px-3 mx-auto py-5 text-center sm:ml-20 sm:text-start
+}
+.profiles{
+    @apply mt-16 flex flex-col gap-5 items-center sm:mt-20 sm:gap-9
+}
+.profiles h1{
+    @apply text-[3em] sm:text-[2.7em] font-bold text-slate-800 mb-10 text-center
+}
+.members{
+    @apply sm:flex sm:gap-2
+}
+.anisha, .richards{
+    @apply hidden sm:flex bg-gradient-to-b from-gray-200 via-gray-100 to-transparent sm:flex-col gap-6 justify-center items-center text-center
+}
+.anisha span, .richards span{
+    @apply mt-[-20px] w-24 h-24
+}
+.anisha h4, .richards h4{
+    @apply text-lg font-bold
+}
+.anisha p, .richards p{
+    @apply text-[1.2em] text-slate-600 font-semibold px-3 mx-auto py-5 text-center
+}
+.bravo{
+    @apply bg-gradient-to-b from-gray-200 via-gray-100 to-transparent flex flex-col gap-6 justify-center items-center text-center 
+}
+.bravo span{
+    @apply mt-[-20px] w-24 h-24
+}
+.bravo h4{
+    @apply text-lg font-bold
+}
+.bravo p{
+    @apply text-[1.2em] text-slate-600 font-semibold px-3 mx-auto py-5 text-center
+}
+.dots{
+    @apply w-fit mx-auto flex justify-around gap-2 sm:hidden
+}
+.dots div{
+    @apply rounded-full w-[7px] h-[7px] border-2 border-[#f3603c] bg-white font-thin
+}
+.dots .index2{
+    @apply bg-[#f3603c]
+}
+.footer-btn{
+    @apply w-fit px-3 py-2 text-white bg-[#f3603c] rounded-full mx-auto my-4 sm:my-14 shadow-2xl shadow-orange-900  hover:drop-shadow-xl
+}
+.comment{
+    @apply flex flex-col gap-7 bg-[#f3603c] py-16 px-6 rounded-lg sm:flex-row sm:gap-28
+}
+.comment h2{
+    @apply text-[2.6em] font-bold text-white text-center sm:w-[60%] md:w-[50%] lg:w-[40%] sm:text-start
+}
+.comment button{
+    @apply w-fit px-3 py-2 text-[#f3603c] bg-white rounded-full mx-auto my-4 shadow-2xl shadow-orange-900 sm:w-[20%] sm:my-auto sm:mx-auto md:w-[14%] md:mr-5 lg:w-[10%]  hover:drop-shadow-xl
+}
+.footer{
+    @apply flex flex-col-reverse p-3 bg-slate-900 w-full text-slate-300 font-bold text-lg sm:flex sm:w-full sm:flex-row md:gap-9 sm:gap-4 sm:justify-around
+}
+.bar1{
+    @apply flex flex-col-reverse w-full sm:flex-col sm:w-fit
+}
+.bar1 span{
+    @apply mx-auto my-4 
+}
+.bar1 ul{
+    @apply flex justify-around gap-7 sm:gap-3 sm:px-3 w-full flex-wrap mx-auto px-9
+}  
+.bar1 ul li i{
+    @apply hover:text-[#f3603c]
+}
+.bar1 p{
+    @apply text-sm text-slate-300 text-center sm:hidden
+}
+.middlebars{
+    @apply flex justify-around sm:justify-between max-w-[640px] w-full mb-4 mx-auto flex-wrap sm:flex-nowrap sm:w-fit sm:gap-5 md:gap-16 sm:mx-0
+}
+.bar2{
+    @apply w-fit text-center mx-auto sm:text-start sm:mx-0
+}
+.bar3{
+    @apply w-fit text-center mx-auto sm:text-start sm:mx-0
+}
+.bar2 ul li, .bar3 ul li{
+    @apply hover:text-[#f3603c] cursor-pointer
+}
+.bar4 .inputs{
+    @apply flex mx-auto flex-wrap justify-center my-8 gap-2 max-w-[640px] w-full sm:flex-nowrap sm:mx-0 sm:flex-row
+}
+.bar4 .inputs input{
+    @apply bg-white text-black px-2 py-2 text-center rounded-full font-bold sm:w-fit
+}
+.bar4 .inputs button{
+    @apply px-5 py-2 text-white bg-[#f3603c] rounded-full shadow-2xl shadow-orange-900 sm:w-fit hover:drop-shadow-xl
+}
+.bar4 p{
+    @apply w-fit hidden sm:block
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
